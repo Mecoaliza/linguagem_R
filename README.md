@@ -1,7 +1,7 @@
 # linguagem_R
 Algumas funções básicas do R
 # Os comentários pode ser feitos por #
-# Thu Dec 22 21:38:39 2022 ------------------------------
+# Thu Dec 22 21:38:39 2022
 ##Atribuição de símbolo ( <- )
 obj_10 <-  10
 obj_10
