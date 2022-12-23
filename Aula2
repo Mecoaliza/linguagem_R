@@ -1,0 +1,74 @@
+#Estrutura e Manipulação de objetos
+#Atributos dos objetos - são modos (natureza) e estruturas
+library(vegan)
+data(dune)
+attributes(dune)
+#Modo dos números podem ser integer ou double(flutuantes ou decimais)
+obj_numerico_inteiro <- 1L
+#Atribuir textos usando aspas
+obj_caracter <-  "a"
+mode(obj_caracter)
+#Converter um modo para outro
+num <- 1:5
+num
+mode(num)
+cha <- as.character(num)
+cha
+mode(cha)
+
+#Criando uma matriz(tabela), DE FORMA HORIZONTAL
+ve <-  1:20
+tabela1 <- matrix(data = ve, nrow = 5, ncol = 4, byrow = TRUE)
+tabela1
+
+
+#Criando dois vetores, e combinar linhas uma embaixo da outra, FUNÇÃO RBIND
+vetor1 <- c(4,9,3)
+vetor2 <- c(5,7,6)
+tabela2 <- rbind(vetor1, vetor2)
+tabela2
+
+#Criando dois vetores, e combinar por colunas um ao lado da outra, FUNÇÃO CBIND
+tabela3 <- cbind(vetor1, vetor2)
+tabela3
+
+
+#Criando ARRAYS, Exemplo de 5 comunidades, 5 espécies, 3 períodos (Linhas, colunas, dimenção)
+tabela4 <- array(data = sample(x = c(0, 1), size = 50, replace = TRUE), dim = c(5, 5, 3))
+tabela4
+
+
+#Criando DATAFRAMES, cria de forma horizontal e todos os vetores precisam ter o mesmo 
+#numero de elementos
+
+genero <- c("Ficus", "Paullinia", "Croton")
+anodecoleta <- c(2002, 2010, 2022)
+habito <- c("árvore", "trepadeira", "arbusto")
+
+tabela5 <- data.frame(genero, anodecoleta, habito)
+tabela5
+
+#Criando uma função
+
+valor <- function(x,y){
+  mu <- (x + y)
+  return(mu)
+}
+valor(15,2)
+
+#FUNÇÃO INDEXAÇÃO, utilizando [], podemos acessar elementos por posição, ou fazer seleção condicional
+
+set.seed(20)
+#Ver apenas 10 elementos dessa sequencia
+vetor3 <- sample(x = seq(0,2, .05), size = 10)
+vetor3
+#Ver apenas o quinto elemento
+vetor3[5]
+#Retirar o décimo elemento
+vetor3[-10]
+#Quais valores são maiores que 1?
+vetor3 > 1
+#Ver somente os valores acima de 1
+vetor3[vetor3 > 1]
+
+#Outras funções max(), min(), range() - amplitude, length() - comprimento, sum() VERT PÁGINA 76
