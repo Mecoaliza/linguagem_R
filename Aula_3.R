@@ -39,5 +39,22 @@ str(df)
 
 # PÁGINA 85
 
+#IMPORTAR TABELA 
 
+df_flora <- read.csv("linguagem_R/dim_localidades.csv")
+df_flora
+
+intror_anfibios_locais <- ecodados::intror_anfibios_locais
+head(intror_anfibios_locais)
+tail(intror_anfibios_locais)
+nrow(intror_anfibios_locais)
+ncol(intror_anfibios_locais)
+dim(intror_anfibios_locais)
+row.names(intror_anfibios_locais)
+colnames(intror_anfibios_locais)
+str(intror_anfibios_locais)
+summary(intror_anfibios_locais)
+any(is.na(intror_anfibios_locais))
+which(is.na(intror_anfibios_locais))
+intror_anfibios_locais_na <- na.omit(intror_anfibios_locais)
 
