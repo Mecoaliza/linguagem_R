@@ -3,6 +3,7 @@
 library(vegan)
 data(dune)
 attributes(dune)
+
 #Modo dos números podem ser integer ou double(flutuantes ou decimais)
 obj_numerico_inteiro <- 1L
 #Atribuir textos usando aspas
@@ -71,4 +72,6 @@ vetor3 > 1
 #Ver somente os valores acima de 1
 vetor3[vetor3 > 1]
 
-#Outras funções max(), min(), range() - amplitude, length() - comprimento, sum() VERT PÁGINA 76
+#Outras funções max(), min(), range() - amplitude, length() - comprimento, sum() 
+
+#VER PÁGINA 76
