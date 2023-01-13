@@ -1,5 +1,5 @@
 # linguagem_R
-Algumas funções básicas do R
+# Algumas funções básicas do R
 # Os comentários pode ser feitos por #
 # Thu Dec 22 21:38:39 2022
 ##Atribuição de símbolo ( <- )
@@ -62,3 +62,6 @@ rm(list = ls())
 #Para salvar todos os objetos e depois carregar quando voltar
 #Session -> Save Workspace -> As...
 #Session -> Load Workspace 
+
+#Commited 
+
