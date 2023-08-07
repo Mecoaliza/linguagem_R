@@ -32,4 +32,3 @@ sqrt(sum(1:100))
   sum() %>%
   sqrt()
 
-# Página 99

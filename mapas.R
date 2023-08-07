@@ -32,4 +32,8 @@ ggplot()+
   geom_point(data = df,
              aes(x = long, y = lat, color = city))+
     theme_light()
+
+data(world)
+world
+plot(world[1], col = viridis::viridis(100), main = "Mapa do mundo")
   
